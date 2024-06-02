@@ -6,7 +6,7 @@ const secretLink = document.getElementById('secret-link'); // Get the secret lin
 
 const currentYear = new Date().getFullYear();
 
-const releasedate = new Date(`September 2 2024 10:00:00`);
+const releasedate = new Date(`September 2 2024 11:00:00`);
 
 // Update Countdown time
 function updateCountdown() {
@@ -29,6 +29,7 @@ function updateCountdown() {
         minutes.innerHTML = '00';
         seconds.innerHTML = '00';
         secretLink.style.display = 'block'; // Show the secret link when the countdown ends
+        document.body.classList.add('reveal-secret'); // Add class to body to hide other elements
     }
 }
 
